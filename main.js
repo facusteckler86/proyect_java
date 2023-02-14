@@ -14,74 +14,105 @@ declaracion de variable
 // nombre_Bonito_Grande //snake case
 // NombreBonitoGrande // pascal case
 
-// let numeroUno = 4;
-// let numeroDos = 5;
-// let resultadoSuma = numeroUno + numeroDos;
-// let resultadoResta = numeroUno - numeroDos;
-// let resultadoMultiplicacion = numeroUno * numeroDos;
-// let resultadoDivision = numeroUno / numeroDos;
+// // let numeroUno = 4;
+// // let numeroDos = 5;
+// // let resultadoSuma = numeroUno + numeroDos;
+// // let resultadoResta = numeroUno - numeroDos;
+// // let resultadoMultiplicacion = numeroUno * numeroDos;
+// // let resultadoDivision = numeroUno / numeroDos;
 
-// console.log("resulatado de la suma" , resultadoSuma);
-// console.log("resulatado de la resta" , resultadoResta);
-// console.log("resulatado de la multiplicacion", resultadoMultiplicacion);
-// console.log("resulatado de la division", resultadoDivision);
+// // console.log("resulatado de la suma" , resultadoSuma);
+// // console.log("resulatado de la resta" , resultadoResta);
+// // console.log("resulatado de la multiplicacion", resultadoMultiplicacion);
+// // console.log("resulatado de la division", resultadoDivision);
 
-// let saludo = "Hola";
-// let nombre = "Facundo";
+// // let saludo = "Hola";
+// // let nombre = "Facundo";
 
-// console.log(mensaje);
-// // console.log("Hola" + 1);
+// // console.log(mensaje);
+// // // console.log("Hola" + 1);
 
-// let mensaje = `este es el saludo ${saludo} ${nombre}`;
+// // let mensaje = `este es el saludo ${saludo} ${nombre}`;
 
-// prompt("Ingrese su nombre");
-// alert (nombre);
-// let nombre = parseFloat (prompt("Diga su nombre: "))
-// let edad = parseInt(prompt("Ingrese su Edad: "));
+// // prompt("Ingrese su nombre");
+// // alert (nombre);
+// // let nombre = parseFloat (prompt("Diga su nombre: "))
+// // let edad = parseInt(prompt("Ingrese su Edad: "));
 
 
-// alert (`Usted es  ${nombre} ${edad}`);
+// // alert (`Usted es  ${nombre} ${edad}`);
 
-// let nombre = "andres";
+// // let nombre = "andres";
 
-// if(nombre){
-//     console.log("Hola Entramos al if");
-// }
+// // if(nombre){
+// //     console.log("Hola Entramos al if");
+// // }
 
-// let fideos = prompt ("Vas a comer fideos?");
-// let milanesas = prompt ("vas a comer milanesas?");
+// // let fideos = prompt ("Vas a comer fideos?");
+// // let milanesas = prompt ("vas a comer milanesas?");
 
-// if (fideos === "si" && milanesas === "si"){
-//     alert ("Avisa si vas a comer fideos")
-// } else if (fideos === "No" && milanesas === "si"){
-//     alert (" Vas a comer milanesas entonces?")
+// // if (fideos === "si" && milanesas === "si"){
+// //     alert ("Avisa si vas a comer fideos")
+// // } else if (fideos === "No" && milanesas === "si"){
+// //     alert (" Vas a comer milanesas entonces?")
    
-// } else if (fideos === "No" && milanesas === "No"){
-//     alert ("Que bueno que cerraste la boca");
-// }
+// // } else if (fideos === "No" && milanesas === "No"){
+// //     alert ("Que bueno que cerraste la boca");
+// // }
 
-let entrada = prompt("Ingrese un numero");
+// let entrada = prompt("Ingrese un numero");
 
-for(let i = 1; <= 10; i++){
+// for(let i = 1; <= 10; i++){
 
-    let resultado = numero + i; 
+//     let resultado = numero + i; 
     
     
-    while (entrada != "Esc"){
+//     while (entrada != "Esc"){
         
-        alert (`${numero} + ${i} = ${resultado}`)
-    switch (entrada) {
-        case "uno":
-            alert ("ingreso el uno")
-            break;
-        case "dos":
-            alert ("ingreso el dos")
-        case "tres":
-            alert ("ingreso el tres")
+//         alert (`${numero} + ${i} = ${resultado}`)
+//     switch (entrada) {
+//         case "uno":
+//             alert ("ingreso el uno")
+//             break;
+//         case "dos":
+//             alert ("ingreso el dos")
+//         case "tres":
+//             alert ("ingreso el tres")
     
-        default:
-            alert("ustes agrego los numeros uno, dos y tres")
-            break;
+//         default:
+//             alert("ustes agrego los numeros uno, dos y tres")
+//             break;
+//     }
+// }
+// }
+function calculadora(num1, num2, operacion) {
+    switch (operacion) {
+      case "+":
+        return num1 + num2;
+        break;
+  
+      case "-":
+        return num1 - num2;
+        break;
+  
+      case "*":
+        return num1 * num2;
+        break;
+  
+      case "/":
+        return num1 / num2;
+        break;
+  
+      default:
+        return "Operacion no identificada"
     }
-}
-}
+  }
+  
+  let operacion = prompt("Ingrese la operacion");
+  let numero1 = parseInt(prompt("Ïngrese el numero uno"));
+  let numero2 = parseInt(prompt("Ïngrese el numero dos"));
+  
+  let resultado = calculadora(numero1, numero2, operacion);
+  let mensaje = `El resultado de la operacion es ${resultado}`;
+  
+  alert(mensaje);
